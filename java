@@ -5,7 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            BufferedReader bf = new BufferedReader(new FileReader("src/main/java/teste.txt"));
+
+            //Colocar o path correto do arquivo de texto a ser lido
+            BufferedReader bf = new BufferedReader(new FileReader("videoTeste.txt"));
             String linha = bf.readLine();
 
             while (linha != null) {
