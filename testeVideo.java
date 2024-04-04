@@ -1,13 +1,11 @@
 import java.io.*;
 
-public class Main {
+public class testeVideo {
 
     public static void main(String[] args) {
 
         try {
-
-            //Colocar o path correto do arquivo de texto a ser lido
-            BufferedReader bf = new BufferedReader(new FileReader("videoTeste.txt"));
+            BufferedReader bf = new BufferedReader(new FileReader("src/main/java/videoTeste.txt"));
             String linha = bf.readLine();
 
             while (linha != null) {
@@ -28,9 +26,10 @@ public class Main {
                 }
 
                 // Ler a próxima linha
+              System.out.println("-------------");
                 linha = bf.readLine();
             }
-
+            
             // Fechar o BufferedReader após a conclusão da leitura do arquivo
             bf.close();
 
